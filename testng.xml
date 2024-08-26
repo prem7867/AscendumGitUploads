@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="main.java.utils.Transformer"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C://Users//Rajeshwari.Prem//OneDrive - Ascendum US//Documents//AutomationBackUp//GamingCashless_CPI">
+        <parameter name="platformName" value="Android"></parameter>
+        <classes>
+
+<!--            <class name="test.java.LoginPage_Tests">-->
+<!--                <methods>-->
+<!--                    <include name="verifyLicensingDetails"/>-->
+<!--                    <include name="verifyNavigationToPrivacyPolicy"/>-->
+<!--                    <include name="verifyFields"/>-->
+<!--                   <include name="verifyInvalidUserNameOrPasswordError"/>-->
+<!--                    <include name="toolTip"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+
+<!--                        <class name="test.java.BlueToothAndWifiSettings_Tests">-->
+<!--                            <methods>-->
+<!--                                <include name="launchBlueTooth"/>-->
+<!--                                <include name="turnOffWifi"/>-->
+<!--                                <include name="turnOffWifiAndONLater"/>-->
+<!--                            </methods>-->
+<!--                        </class>-->
+
+            <class name="test.java.DeviceInfoPage_Tests">
+                <methods>
+                    <include name="verifyDeviceInfoPage_340"/>
+                    <include name="rebootBLEDongle_345"/>
+                    <include name="connectDisconnect_344"/>
+                </methods>
+            </class>
+
+<!--                        <class name="test.java.ForgotPasswordPage_Test">-->
+<!--                            <methods>-->
+<!--                                <include name="clickForgotPassword_248"/>-->
+<!--                                <include name="verifyMandatePassword_248"/>-->
+<!--                            </methods>-->
+<!--                        </class>-->
+
+        </classes>
+    </test>
+</suite>
